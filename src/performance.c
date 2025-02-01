@@ -1,6 +1,9 @@
 // Part of PiTubeDirect
 // https://github.com/hoglet67/PiTubeDirect
 #include <stdio.h>
+// Include sys/types.h before inttypes.h to work around issue with
+// certain versions of GCC and newlib which causes omission of PRIu64
+#include <sys/types.h>
 #include <inttypes.h>
 #include <string.h>
 #include "startup.h"
